@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>apv</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			min-height: 100vh;
+			margin: 0;
+			display: grid;
+			place-items: center;
+			position: relative;
+			font-family: Arial, sans-serif;
+			color: #292929;
+		}
+
+		body::before {
+			content: "arnau\A pacheco";
+			white-space: pre;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+			color: rgba(96, 123, 112, 0.12);
+			font-size: clamp(5rem, 19vw, 18rem);
+			font-weight: 700;
+			line-height: 0.85;
+		}
+
+		main {
+			padding: 2rem;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<main>Placeholder text. I haven't done anything yet here.</main>
+</body>
+</html>
