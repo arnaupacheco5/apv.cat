@@ -5,6 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>apv</title>
 	<style>
+		@font-face {
+			font-family: "FiraSans-Black";
+			src: url("FiraSans-Black.ttf") format("truetype");
+			font-weight: 900;
+		}
+
 		* {
 			box-sizing: border-box;
 		}
@@ -20,26 +26,61 @@
 		}
 
 		body::before {
-			content: "arnau\A pacheco";
+			content: " arnau\A       pacheco\A vives";
 			white-space: pre;
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			z-index: -1;
-			color: rgba(96, 123, 112, 0.12);
-			font-size: clamp(5rem, 19vw, 18rem);
-			font-weight: 700;
-			line-height: 0.85;
+			color: rgba(3, 3, 3, 0.12);
+			font-family: "FiraSans-Black", Arial, sans-serif;
+			font-size: clamp(5rem, 19vh, 18rem);
+			font-weight: 900;
+			line-height: 0.8;
 		}
 
 		main {
 			padding: 2rem;
 			text-align: center;
+			color: #fff;
+			background: #000;
+			border: 10px solid #eaff00;
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.18);
 		}
+
+		.youtube-button {
+			display: inline-block;
+			margin-top: 1rem;
+			padding: 0.5rem 1.25rem;
+			font-family: "FiraSans-Black", Arial, sans-serif;
+			background: #eaff00;
+			border: 5px solid #eaff00;
+			color: #000;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		.youtube-button:hover {
+			background: #000000;
+			color: #fff;
+		}
+
+		.youtube-button:focus-visible {
+			outline: 3px solid #fff;
+			outline-offset: 5px;
+		}
+
 	</style>
 </head>
 <body>
-	<main>Placeholder text. I haven't done anything yet here.</main>
+	<main>
+		Hola, aqui trobareu els meus projectes.
+		<br>
+		Estic legalment obligat a escriure aixo en Català.
+		<br>
+		<a class="youtube-button" href="https://www.youtube.com/@ArnauDisrepair">YouTube</a>
+	</main>
+    
 </body>
 </html>
