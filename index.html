@@ -26,19 +26,22 @@
 		}
 
 		body::before {
-			content: " arnau\A       pacheco\A vives";
-			white-space: pre;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			z-index: -1;
-			color: rgba(3, 3, 3, 0.12);
-			font-family: "FiraSans-Black", Arial, sans-serif;
-			font-size: clamp(5rem, 19vh, 18rem);
-			font-weight: 900;
-			line-height: 0.8;
-		}
+            content: "arnau\A pacheco\A vives";
+            white-space: pre;
+            position: absolute;
+            top: 0;
+            left: 0%;
+            height: 100dvh;
+            display: flex;
+            align-items: center;
+            transform: translateX(0%);
+            z-index: -1;
+            color: rgba(3, 3, 3, 0.12);
+            font-family: "FiraSans-Black", Arial, sans-serif;
+            font-size: calc(100dvh / 2.4);
+            font-weight: 900;
+            line-height: 0.85;
+        }
 
 		main {
 			padding: 2rem;
